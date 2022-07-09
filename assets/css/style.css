@@ -862,20 +862,9 @@ section {
   transition: 0.4s;
   border-radius: 4px;
 }
-.contact .php-email-form changeGradient {
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  background-size: 400%;
-    animation: changeGradientAnimation 8s linear infinite;
-  @keyframes changeGradientAnimation {
-    0% {
-      background-position: 0%;
-    }
-    100% {
-      background-position: 400%;
-    }
-  }
+.contact .php-email-form button[type=submit]:hover {
+  background: #37b3ed;
 }
-
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -962,4 +951,28 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+body {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	background-color: #291d89;
+}
+
+svg {
+	width: 100%;
+	height: 100vh;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+#base {
+	cursor: pointer;
 }
