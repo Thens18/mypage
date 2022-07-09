@@ -862,35 +862,44 @@ section {
   transition: 0.4s;
   border-radius: 4px;
 }
-.contact .php-email-form changeGradient {
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  background-size: 400%;
-    animation: changeGradientAnimation 8s linear infinite;
-  @keyframes changeGradientAnimation {
-    0% {
-      background-position: 0%;
-    }
-    100% {
-      background-position: 400%;
-    }
-  }
+.contact .php-email-form button {
+  display: block;
+  height: 50px;
+  width: 160px;
+  background-color: #40B4DE;
+  color: #fff;
+  font-size: 0.75em;
+  border-radius: 50px;
+  margin: 100px auto;
+  border: none;
 }
 
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #82D2F0;
 }
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+
+button:focus {
+  outline: 0;
+}
+
+#credit {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #939393;
+  margin-top: 20px;
+  left: 20px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #939393;
+}
+
+a:focus,
+a:hover {
+  color: #40B4DE;
 }
 
 /*--------------------------------------------------------------
